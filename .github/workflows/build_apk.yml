@@ -20,6 +20,9 @@ jobs:
         with:
           flutter-version: '3.24.0'
 
+      - name: Install dependencies
+        run: flutter pub get
+
       - name: Install Fastlane
         run: sudo gem install fastlane -NV
 
